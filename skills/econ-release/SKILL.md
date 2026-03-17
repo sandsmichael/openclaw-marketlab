@@ -16,13 +16,14 @@ When invoked, fetch the official reports for a named economic release reports li
   - Consensus estimate(s) for the same metric (e.g. consensus NFP change). Explicitly state the source you retrieve this from.
   - Prior figure(s) for the same metric (e.g. prior month CPI MoM). Source from the official report directly.
 3. Notable sub-components
-  - Extract any key sub-components of the report that are particularly relevant or market-moving. For example, if the headline print is CPI MoM, extract core CPI MoM, shelter index change, energy index change, etc. If the headline print is NFP change, extract private payrolls change, manufacturing payrolls change, average hourly earnings change, etc.
+  - Extract any key sub-components of the report that are particularly relevant or market-moving. For example, if the headline print is CPI MoM, extract core CPI MoM, shelter index change, energy index change, etc. If the headline print is NFP change, extract private payrolls change, manufacturing payrolls change, average hourly earnings change, etc. Use your judgement but include anything that is particularly relevant or insightful.
   - Provide both quantitiative (specific data) and qualitative assessments.
 4. Confounding Events
   - Note any major events, policy changes, or external factors that may have influenced the data. For example, if there was a major weather event that disrupted economic activity during the month, note this as a potential confounding factor when interpreting the data. 
   - Anything unusually important that may have influenced the data should be noted here.
 5. Direct Quotations
   - Extract any direct quotations from the report or press release that are particularly relevant or insightful. For example, if the BLS report includes a statement from the Commissioner about the labor market, extract that quote and include it here. If specific explanations or caveats are mentioned in the report, quote those directly.
+  - Include explanations and color commentary in addition to the raw, quantitative data point.
 6. Market Interpretation
   - Provide a brief interpretation of what the data means for the economy and markets. For example, if CPI came in hotter than expected, you might interpret this as increasing the likelihood of more aggressive Fed tightening, which could be negative for equities and positive for bonds. If NFP came in much stronger than expected, you might interpret this as a sign of a resilient labor market, which could have implications for consumer spending and economic growth.
   - Scan external sources for any notable market reactions to the data release (e.g. stock market down 1% following a hot CPI print) and include that in your interpretation with explicit sourcing.

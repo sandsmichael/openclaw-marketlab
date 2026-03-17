@@ -1,8 +1,12 @@
+import os
 import numpy as np, pandas as pd
 from sqlalchemy import create_engine,text
 from datetime import date
 
-engine=create_engine('postgresql://<REDACTED_USER>:<REDACTED_PASS>@<REDACTED_HOST>:5432/marketlab')
+ENGINE_URI = os.getenv('MARKETLAB_DB_URI')
+if not ENGINE_URI:
+    raise RuntimeError('MARKETLAB_DB_URI is not set. Put credentials in /home/msands/.openclaw/workspace/.env')
+engine=create_engine(ENGINE_URI)
 out=f'/home/msands/.openclaw/workspace/skills/backtest/agentic/{date.today().isoformat()}_backtest_results.csv'
 with engine.connect() as c:
     px=pd.read_sql(text('select date,ticker,adj_px from prices order by date'),c)

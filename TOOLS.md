@@ -39,13 +39,10 @@ Things like:
 
 ## PostgreSQL
 
-- Host: `<REDACTED_HOST>`
-- Port: `5432`
-- Database: `marketlab`
-- Username: `<REDACTED_USER>`
-- Password: `<REDACTED_USER>`
+- Credentials moved to: `/home/msands/.openclaw/workspace/.env`
+- Env var name: `MARKETLAB_DB_URI`
+- Load command before local scripts: `set -a; source /home/msands/.openclaw/workspace/.env; set +a`
 - Access: read-only across all schemas/tables (as granted by Michael)
-- Connection URI: `postgresql://<REDACTED_USER>:<REDACTED_PASS>@<REDACTED_HOST>:5432/marketlab`
 
 ## Why Separate?
 

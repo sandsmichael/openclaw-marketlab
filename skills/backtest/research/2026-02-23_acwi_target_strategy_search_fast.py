@@ -1,9 +1,12 @@
+import os
 import numpy as np
 import pandas as pd
 from sqlalchemy import create_engine, text
 from datetime import date
 
-ENGINE_URI='postgresql://<REDACTED_USER>:<REDACTED_PASS>@<REDACTED_HOST>:5432/marketlab'
+ENGINE_URI=os.getenv('MARKETLAB_DB_URI')
+if not ENGINE_URI:
+    raise RuntimeError('MARKETLAB_DB_URI is not set. Put credentials in /home/msands/.openclaw/workspace/.env')
 OUT=f'/home/msands/.openclaw/workspace/skills/backtest/agentic/{date.today().isoformat()}_backtest_results.csv'
 
 engine=create_engine(ENGINE_URI)
