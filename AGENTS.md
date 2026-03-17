@@ -140,7 +140,7 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 - Keep cron job payload messages minimal.
 - Do **not** store long internal instructions in cron job definitions.
-- For skill-based jobs, payload message should only point to the skill file path in `/home/msands/.openclaw/workspace/skills/.../SKILL.md`.
+- ## For skill-based jobs, payload message should only point to the skill file path in `/home/msands/.openclaw/workspace/skills/.../SKILL.md`. ##
 - Put durable instructions in the skill file itself, not in cron jobs.
 
 **Use heartbeat when:**

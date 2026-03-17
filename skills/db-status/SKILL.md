@@ -15,7 +15,7 @@ Provide any relevant notes, messages or errors in this section as markdown text.
 
 Where:
   Name = The name of the python script that is run from database/batch/
-  Last Run = Timestamp of the last time the script was executed
+  Last Run = Timestamp of the last time the script was executed (load date)
   Max Date = The maximum date for which the script has successfully populated data in the database. Determine based on a select(max(date)) query to the relevant table.
   Status = Updated if Max Date is euqal to either the previous or current business date. Stale if it is not.
   Emoji = An emoji representing the job status of updated (green check) or stale (red X)
