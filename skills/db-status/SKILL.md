@@ -38,4 +38,11 @@ Execution requirements:
 - Use `psycopg` from that environment for database queries.
 - Never return raw traceback/exec errors to Slack.
 
+Coverage requirements:
+- Include every batch script from `01_constituents.py` through `11_public_links.py` in the report.
+- For `03_earnings.py`, report two separate line items:
+  - `03_earnings_history`
+  - `03_earnings_consensus`
+- Status for all line items is `Updated` if the relevant freshness date is equal to current or previous business date; otherwise `Stale`.
+
 Send the output to me as a Slack message in markdown format.

@@ -7,7 +7,7 @@
       "name": "Weekday 5:30 PM database status report to Slack",
       "enabled": true,
       "createdAtMs": 1771721379988,
-      "updatedAtMs": 1773711891151,
+      "updatedAtMs": 1773715745322,
       "schedule": {
         "kind": "cron",
         "expr": "15 19 * * 1-5",
@@ -26,9 +26,9 @@
       },
       "state": {
         "nextRunAtMs": 1773789300000,
-        "lastRunAtMs": 1773711677699,
+        "lastRunAtMs": 1773715635390,
         "lastStatus": "ok",
-        "lastDurationMs": 87344,
+        "lastDurationMs": 109932,
         "consecutiveErrors": 0
       }
     },
