@@ -99,16 +99,6 @@ Generate my Daily Market Intelligence Brief PDF for today. This is a comprehensi
 - For each index in the investable universe, describe Today's Signal, Key Drivers, Detailed Impact Commentary.
 - In table format, 
 
-**OUTPUT:** Save as a professionally formatted multi-page PDF to my selected folder, named:
-`Daily_Market_Brief_[YYYY-MM-DD].pdf`
 
-**STYLE PREFERENCES:**
-- Navy/steel blue color scheme with alternating row stripes
-- All sections clearly labeled with section numbers
-- Data panels for each release (actual vs. forecast vs. prior)
-- Market vitals strip on the first page
-- Disclaimer on the last page
-
----
-
-*Scheduled daily at 7:00 AM — task name: daily-market-brief*
+**Ouput**
+Write the comprehensive market brief and respond to user with the report. 
