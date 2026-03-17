@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "2acd14da-63b5-4616-aeef-6ddb27ac7965",
+      "agentId": "main",
+      "name": "Weekday 5:30 PM database status report to Slack",
+      "enabled": true,
+      "createdAtMs": 1771721379988,
+      "updatedAtMs": 1773711891151,
+      "schedule": {
+        "kind": "cron",
+        "expr": "15 19 * * 1-5",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run skill file: /home/msands/.openclaw/workspace/skills/db-status/SKILL.md"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "channel:openclaw-simon"
+      },
+      "state": {
+        "nextRunAtMs": 1773789300000,
+        "lastRunAtMs": 1773711677699,
+        "lastStatus": "ok",
+        "lastDurationMs": 87344,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "87fd65e4-4d48-464d-a13c-1c3956b2e7db",
+      "agentId": "main",
+      "name": "econ-release-daily-10am",
+      "enabled": true,
+      "createdAtMs": 1771742887785,
+      "updatedAtMs": 1773711891116,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 10 * * *",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run skill file: /home/msands/.openclaw/workspace/skills/econ-release/SKILL.md"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "openclaw-simon",
+        "bestEffort": true
+      },
+      "state": {
+        "nextRunAtMs": 1773756000000,
+        "lastRunAtMs": 1773669600005,
+        "lastStatus": "ok",
+        "lastDurationMs": 86833,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "aaa41d66-14b5-47f2-96cb-03cfff7b11da",
+      "agentId": "main",
+      "name": "Weekday 9am market brief",
+      "enabled": true,
+      "createdAtMs": 1771822979184,
+      "updatedAtMs": 1773711891085,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 9 * * 1-5",
+        "tz": "America/New_York"
+      },
+      "sessionTarget": "isolated",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "agentTurn",
+        "message": "Run skill file: /home/msands/.openclaw/workspace/skills/market-brief/SKILL.md"
+      },
+      "delivery": {
+        "mode": "announce",
+        "channel": "slack",
+        "to": "channel:openclaw-simon"
+      },
+      "state": {
+        "nextRunAtMs": 1773752400000,
+        "lastRunAtMs": 1773666000005,
+        "lastStatus": "ok",
+        "lastDurationMs": 221817,
+        "consecutiveErrors": 0
+      }
+    }
+  ]
+}

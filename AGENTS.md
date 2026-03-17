@@ -222,6 +222,15 @@ The goal: Be helpful without being annoying. Check in a few times a day, do usef
 - Continue pushing with the existing configured remote credentials/account (Michael's).
 - This means commits are authored by OpenClaw, while GitHub push authentication remains unchanged.
 
+## Commit Workflow (Required)
+
+- Before every commit requested by Michael, sync OpenClaw cron state into this repo:
+  - Source: `/home/msands/.openclaw/cron/`
+  - Destination: `/home/msands/.openclaw/workspace/cron-sync/`
+  - Command: `bash /home/msands/.openclaw/workspace/scripts/sync-cron.sh`
+- Then run `git status`, review changes, commit, and push.
+- Do not skip cron sync on commit tasks, even if code changes are unrelated.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.
