@@ -136,6 +136,13 @@ You are free to edit `HEARTBEAT.md` with a short checklist or reminders. Keep it
 
 ### Heartbeat vs Cron: When to Use Each
 
+### Cron Payload Rule (Important)
+
+- Keep cron job payload messages minimal.
+- Do **not** store long internal instructions in cron job definitions.
+- For skill-based jobs, payload message should only point to the skill file path in `/home/msands/.openclaw/workspace/skills/.../SKILL.md`.
+- Put durable instructions in the skill file itself, not in cron jobs.
+
 **Use heartbeat when:**
 
 - Multiple checks can batch together (inbox + calendar + notifications in one turn)
